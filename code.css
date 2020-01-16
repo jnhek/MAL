@@ -1,1 +1,259 @@
+/* Images */
+    
+    .status-menu:after {
+        background-image: url(https://cdn.myanimelist.net/images/userimages/3080391.jpg);
+    }
+    
+    #cover-image-container:after {
+        content: "Jazters";
+    }
+    
+    .cover-block {
+        background-image: url(https://i.pximg.net/img-original/img/2013/11/11/23/30/32/39692859_p0.png) !important;
+    }
+    
+    /* BACKGROUND IMAGE CHANGE HERE */
+    body {
+        background-image: url(https://i.imgur.com/IiYdKUJ.jpg) !important;
+    }
+    
+    
+    /* End of Images */
 
+/* Tags */
+    
+    .data.tags span a[href*="\=Favourite"],
+    .data.tags span a[href*="\=Favorite"] {
+        position: absolute;
+        left: -32px;
+        top: 50%;
+        margin-top: -13px;
+        width: 26px;
+        height: 26px;
+        background: #212121;
+        padding: 0;
+        border-radius: 50%;
+        color: #ff65ad !important;
+        font-size: 0 !important;
+        line-height: 23px;
+        overflow: hidden;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    }
+    
+    .data.tags span a[href*="\=Favourite"]:before,
+    .data.tags span a[href*="\=Favorite"]:before {
+        content: "♥";
+        font-size: 26px;
+    }
+    
+    .list-table-data {
+        padding-bottom: 11px;
+    }
+    
+    .data.tags {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: -webkit-flex !important;
+        display: -moz-flex !important;
+        display: flex !important;
+        width: 0;
+        height: 100%;
+        padding: 0 !important;
+        -webkit-align-items: flex-end;
+        -moz-align-items: flex-end;
+        align-items: flex-end;
+    }
+    
+    .data.tags div {
+        max-width: 980px;
+        margin: 0 0 4px 80px;
+        font-size: 0;
+        white-space: nowrap;
+    }
+    
+    .data.tags span {
+        display: inline-block;
+        padding: 0;
+    }
+    
+    .data.tags span a {
+        padding: 1px 8px !important;
+        margin-right: 4px;
+        white-space: nowrap;
+    }
+    
+    .data.tags span a[href*="\=Favo"] {
+        padding: 0 !important;
+    }
+    
+    .data.tags a.edit {
+        right: -1060px;
+    }
+    
+    .data.tags textarea {
+        right: -1060px;
+    }
+    
+    .data.tags span a {
+        position: relative;
+    }
+    
+    .data.tags span a:not([href*="\=Favo"]):after,
+    .data.tags span a:not([href*="\=Favo"]):before {
+        position: absolute;
+        display: block;
+        -webkit-transition: all 0.15s ease;
+        transition: all 0.15s ease;
+        pointer-events: none;
+        opacity: 0;
+        z-index: 1;
+    }
+    
+    .data.tags span a:not([href*="\=Favo"]):after {
+        top: 27px;
+        left: -25px;
+        width: 340px;
+        height: auto;
+        padding: 4px 8px;
+        background: #191919;
+        border: 1px solid #777;
+        border-radius: 4px;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        color: #ababab;
+        font: 11px/15px Arial, Verdana;
+        text-align: left;
+        white-space: pre-wrap;
+    }
+    
+    .data.tags span a:not([href*="\=Favo"]):before {
+        content: "";
+        top: 17px;
+        left: 50%;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent #777 transparent;
+        margin-left: -10px;
+    }
+    
+    .data.tags span a:hover:after {
+        left: -20px;
+        opacity: 1;
+    }
+    
+    .data.tags span a:not([href*="\=Favo"]):hover:before {
+        margin-left: -5px;
+        opacity: 1;
+    }
+    
+    .data.tags span:nth-child(n+5) a:not([href*="\=Favo"]):after {
+        left: -105px;
+    }
+    
+    .data.tags span:nth-child(n+5) a:hover:after {
+        left: -100px;
+    }
+    
+    .data.tags span:nth-child(n+8) a:not([href*="\=Favo"]):after {
+        left: auto;
+        right: -115px;
+    }
+    
+    .data.tags span:nth-child(n+8) a:hover:after {
+        right: -100px;
+    }
+    
+    .data.tags span:nth-child(n+11) a:not([href*="\=Favo"]):after {
+        right: -15px;
+    }
+    
+    .data.tags span:nth-child(n+11) a:hover:after {
+        right: -20px;
+    }
+    
+    .data.tags span a[href*="\=SF"] {
+        color: #2163ce!important
+    }
+    
+    /*Temporary Tags*/
+    .data.tags a[href*="\=SF"]:after {
+        content: "Season Favorite\a An anime that I am currently enjoying more than the others."
+    }
+    /*End of Temporary Tags*/
+
+    /*Anime Tags*/
+    .data.tags span a[href*="\=Classic"] {
+        color: #ffffff!important
+    }
+    .data.tags a[href*="\=Classic"]:after {
+        content: "A very popular anime that many consider to be a must watch."
+    }
+
+    .data.tags span a[href*="\=Ecchi"] {
+        color: #f086be!important
+    }
+    .data.tags a[href*="\=Ecchi"]:after {
+        content: "It's lewd."
+    }
+    
+    .data.tags span a[href*="\=Harem"] {
+        color: #1a90eb!important
+    }
+    .data.tags a[href*="\=Harem"]:after {
+        content: "A guilty pleasure of mine."
+    }
+
+    .data.tags span a[href*="\=HR"] {
+        color: #2aede3!important
+    }
+    .data.tags a[href*="\=HR"]:after {
+        content: "Highly Recommended\a I would absolutely recommend watching this anime."
+    }
+    
+    .data.tags span a[href*="\=SC"] {
+        color: #f44259!important
+    }
+    .data.tags a[href*="\=SC"]:after {
+        content: "Second Chance\a I'll give this anime a second chance one of these days."
+    }
+    /*End of Anime Tags*/
+
+    /*Manga Tags*/
+    .data.tags span a[href*="\=Manga"] {
+        color: #ffffff!important
+    }
+    .data.tags a[href*="\=Manga"]:after {
+        content: "Japanese manga."
+    }
+
+    .data.tags span a[href*="\=Manhua"] {
+        color: #ff0d15!important
+    }
+    .data.tags a[href*="\=Manhua"]:after {
+        content: "Chinese manga."
+    }
+
+    .data.tags span a[href*="\=Manhwa"] {
+        color: #edb20e!important
+    }
+    .data.tags a[href*="\=Manhwa"]:after {
+        content: "Korean manga."
+    }
+
+    .data.tags span a[href*="\=Light Novel"] {
+        color: #a0decb!important
+    }
+    .data.tags a[href*="\=Light Novel"]:after {
+        content: "Japanese style novel, containing text and hardly any pictures."
+    }
+
+    .data.tags span a[href*="\=Webcomic"] {
+        color: #a39f95!important
+    }
+    .data.tags a[href*="\=Webcomic"]:after {
+        content: "Self-published comics that origniate on the internet."
+    }
+    /*End of Manga Tags*/
+
+    /* End of Tags */
